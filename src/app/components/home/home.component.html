@@ -1,0 +1,52 @@
+<p>
+ÜRÜN SATIŞ PORTALINA HOŞGELDİNİZ!
+</p>
+
+Yönetici kısmına yetkilendirme verilecek!
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Ad Soyad</th>
+                    <th>Yaş</th>
+                    <th>E-Posta</th>
+                    <th>Düzenle</th>
+                    <th>Sil</th>
+                    
+                    
+                </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let kisi of kisiler">
+                        <td>{{kisi.Id}}</td>
+                        <td>{{kisi.AdSoyad}}</td>
+                        <td>{{kisi.Mail}}</td>
+                        <td>{{kisi.Yas}}</td>
+                        <td><button class="btn btn-warning">Düzenle</button></td>
+                        <td><button class="btn btn-danger" (click)="KisiSil(kisi)">Sil</button></td>
+                    </tr>
+               
+                </tbody>
+            </table>    
+        </div>
+        <div class="col-md-4">
+            <h4>{{baslik}}</h4>
+
+        </div>
+    </div>     
+</div>
+
+
+
+
+
+
+            
+
+
+
+
